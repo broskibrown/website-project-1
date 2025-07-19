@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="page_container">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <a href="home.html">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/logo_light.png" alt="Website Logo"
+                        class="logo">
+                </a>
+
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="navlink">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html" class="cart-button">🛒</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page_container">
+        <main>
+            <section class="community_message">
+                <h2>Community Message</h2>
+                <p>This is where we will have the community message of the website.</p>
+            </section>
+
+            <section class="community_involvement">
+                <h2>Community Involvement</h2>
+                <div class="section_2_flex">
+                    <div class="community_involvement_example">
+                        <h3>Example 1 Title</h3>
+                        <p>Example description</p>
+                    </div>
+                    <div class="community_involvement_example">
+                        <h3>Example 2 Title</h3>
+                        <p>Example description</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="customer_spotlight">
+                <h2>Customer Spotlight</h2>
+                <div class="community_product_images">
+                    <img src="assets\Bloom Valley Nursery Gallery Images\Client1_StringofPearls.png" alt="Aloe Plant">
+                    <img src="assets\Bloom Valley Nursery Gallery Images\Client1_SpiderPlant.png" alt="Apple Tree">
+                    <img src="assets\Bloom Valley Nursery Gallery Images\Client1_WateringCan.png" alt="Potting Soil">
+                </div>
+            </section>
+
+            <section class="upcoming_events">
+                <h2>Upcoming Events</h2>
+                <div class="upcoming_events_image">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/event_calendar.jpg" alt="Event Calendar">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-overlay" class="cart-overlay hidden">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="close-cart">Close</button>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="process-order">Process Order</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="page_container">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <a href="home.html">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/logo_light.png" alt="Website Logo"
+                        class="logo">
+                </a>
+
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="navlink">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html" class="cart-button">🛒</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page_container">
+        <main>
+            <section class="hero">
+                <h2>Hero Section</h2>
+                <p>This is the home page of our website. Here you can find various resources and information.</p>
+            </section>
+
+            <section class="features">
+                <div class="section_2_flex">
+                    <div class="client_highlights">
+                        <h2>Client Highlights</h2>
+                        <p>Hi, this is where we are going to talk about the client highlights.</p>
+                    </div>
+                    <div class="client_imagery">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\person holding plant.png"
+                            alt="Man Holding Plant">
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="categories_of_products">
+                <h2>Categories of Products</h2>
+            </section>
+            <br>
+
+            <div class="product_images">
+                <img src="assets\Bloom Valley Nursery Gallery Images\Client1_AloePlant.png" alt="Aloe Plant">
+                <img src="assets\Bloom Valley Nursery Gallery Images\Client1_AppleTree.png" alt="Apple Tree">
+                <img src="assets\Bloom Valley Nursery Gallery Images\Client1_PottingSoil.png" alt="Potting Soil">
+                <img src="assets\Bloom Valley Nursery Gallery Images\Client1_WateringCan.png" alt="Watering Can">
+            </div>
+            <br>
+
+            <div class="shopping_perks">
+                <h2>Shopping Perks</h2>
+                <p>Shopping perks content</p>
+            </div>
+            <br>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-overlay" class="cart-overlay hidden">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="close-cart">Close</button>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="process-order">Process Order</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

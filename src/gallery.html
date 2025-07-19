@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="page_container">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <a href="home.html">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/logo_light.png" alt="Website Logo"
+                        class="logo">
+                </a>
+
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="navlink">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html" class="cart-button">🛒</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page_container">
+        <main>
+            <section class="gallery_hero">
+                <h1>Gallery</h1>
+            </section>
+
+            <br>
+            <section class="gallery">
+                <div class="gallery_images_row">
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_AloePlant.png" alt="Aloe Plant"
+                            class="gallery_image" data-name="Aloe Plant">
+                        <h3 class="gallery_card_title">Aloe Plant</h3>
+                        <p class="gallery_card_description">Aloe plants are known for their medicinal properties and are
+                            easy to care for.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_AppleTree.png" alt="Apple Tree"
+                            class="gallery_image" data-name="Apple Tree">
+                        <h3 class="gallery_card_title">Apple Tree</h3>
+                        <p class="gallery_card_description">Apple trees provide delicious fruits and beautiful blossoms
+                            in spring.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+
+                    </div>
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_BirchTree.png" alt="Birch Tree"
+                            class="gallery_image" data-name="Birch Tree">
+                        <h3 class="gallery_card_title">Birch Tree</h3>
+                        <p class="gallery_card_description">Birch trees are known for their distinctive white bark and
+                            graceful appearance, often used to enhance landscapes.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gallery_images_row">
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_BirdHouse.png" alt="Bird House"
+                            class="gallery_image" data-name="Bird House">
+                        <h3 class="gallery_card_title">Bird House</h3>
+                        <p class="gallery_card_description">Bird houses provide a safe and cozy shelter for birds,
+                            enhancing your garden's ecosystem and attracting beautiful wildlife.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_MapleTree.png" alt="Maple Tree"
+                            class="gallery_image" data-name="Maple Tree">
+                        <h3 class="gallery_card_title">Maple Tree</h3>
+                        <p class="gallery_card_description">Maple trees are admired for their vibrant fall foliage and
+                            sturdy growth, making them a popular choice for landscaping.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_PottingSoil.png" alt="Potting Soil"
+                            class="gallery_image" data-name="Potting Soil">
+                        <h3 class="gallery_card_title">Potting Soil</h3>
+                        <p class="gallery_card_description">Quality potting soil is essential for healthy plant growth.
+                        </p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gallery_images_row">
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_SpiderPlant.png" alt="Spider Plant"
+                            class="gallery_image" data-name="Spider Plant">
+                        <h3 class="gallery_card_title">Spider Plant</h3>
+                        <p class="gallery_card_description">Spider plants are popular houseplants known for their
+                            air-purifying qualities and easy maintenance.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_StringOfPearls.png"
+                            alt="String of Pearls" class="gallery_image" data-name="String of Pearls">
+                        <h3 class="gallery_card_title">String of Pearls</h3>
+                        <p class="gallery_card_description">String of Pearls is a unique succulent with trailing stems
+                            of round, bead-like leaves, perfect for hanging baskets.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="gallery_card">
+                        <img src="assets\Bloom Valley Nursery Gallery Images\Client1_WateringCan.png" alt="Watering Can"
+                            class="gallery_image" data-name="Watering Can">
+                        <h3 class="gallery_card_title">Watering Can</h3>
+                        <p class="gallery_card_description">A watering can is an essential tool for evenly and
+                            efficiently watering your plants.</p>
+                        <button class="gallery_card_button add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-overlay" class="cart-overlay hidden">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="close-cart">Close</button>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="process-order">Process Order</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

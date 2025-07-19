@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="page_container">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <a href="home.html">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/logo_light.png" alt="Website Logo"
+                        class="logo">
+                </a>
+
+                <div class="nav-wrapper">
+                    <nav>
+                        <ul class="navlink">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html" class="cart-button">🛒</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page_container">
+        <main>
+            <h1>About Us</h1>
+            <section class="our_mission">
+                <div class="left_div">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/person holding plant.png" alt="Our Mission">
+                </div>
+                <div class="right_div">
+                    <h1>Our Mission</h1>
+                    <h3>At Bloom Valley Nursery, our mission is to cultivate a vibrant community through the love of
+                        plants and gardening. We strive to provide high-quality plants, expert advice, and a welcoming
+                        environment for all gardening enthusiasts.</h3>
+                </div>
+            </section>
+            <section class="business_hours">
+                <div class="left_div">
+                    <h2>Business Hours</h2>
+                    <p>Monday: 9AM - 5PM</p>
+                    <p>Tuesday: 9AM - 5PM</p>
+                    <p>Wednesday: 9AM - 5PM</p>
+                    <p>Thursday: 9AM - 5PM</p>
+                    <p>Friday: 9AM - 5PM</p>
+                    <p>Saturday: Closed</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="right_div">
+                    <img src="assets/Bloom Valley Nursery Gallery Images/company_map.png"
+                        alt="Map of Company Locations">
+                </div>
+            </section>
+            <section class="contact_info">
+                <div class="left_div">
+                    <h2>Contact Our Company</h2>
+                    <form id="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="right_div">
+                    <img src="company_image.jpg" alt="Company Image">
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-overlay" class="cart-overlay hidden">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="close-cart">Close</button>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="process-order">Process Order</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
