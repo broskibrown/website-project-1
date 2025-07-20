@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartItemsList = document.getElementById("cart-items");
     const clearCartBtn = document.getElementById("clear-cart");
     const contactForm = document.getElementById("contact-form");
+    const processCartBtn = document.getElementById("process-order");
 
     if (hamburger && navLinks) {
         hamburger.addEventListener("click", () => {
@@ -62,6 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
         clearCartBtn.addEventListener("click", () => {
             sessionStorage.removeItem("cart");
             renderCartFromStorage();
+
+            alert(`Items cleared from cart!`);
         });
     }
 
@@ -73,6 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const phone = document.getElementById("phone").value.trim();
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
+
+            if (!name || !phone || !email || !message) {
+                alert("Please fill out all required fields before submitting.");
+                return;
+            }
 
             const formData = {
                 name,
@@ -86,4 +94,23 @@ document.addEventListener("DOMContentLoaded", () => {
             contactForm.reset();
         });
     }
+
+    if (processCartBtn) {
+        processCartBtn.addEventListener("click", () => {
+            const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+            if (cart.length === 0) {
+                alert("Your cart is already empty!");
+                return;
+            }
+
+            alert("Your order has been processed!");
+
+            sessionStorage.removeItem("cart");
+            renderCartFromStorage();
+
+            processCartBtn.disabled = true;
+            processCartBtn.textContent = "Order Processed";
+        });
+    }
+
 });
